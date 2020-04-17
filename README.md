@@ -2,10 +2,7 @@
 
 Follow these steps to get started with using cloud based servers. Most of these are free services. By signing up for these services you can become familiar with the tools we are using.
 
-1. #### Create a free SNOW Service Now Demo account and developer instance - link the two of them.
-
-    https://www.servicenow.com/lpdem/demonow.html
-    https://developer.servicenow.com/
+1. ####  [SNOW Service Now guide](./ServiceNow/README.md)
 
 2. #### Get an old computer or raspberry pi and install pihole with portainer: 
     https://homenetworkguy.com/how-to/install-pihole-on-raspberry-pi-with-docker-and-portainer/
