@@ -10,23 +10,23 @@
     
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-    2. Add the Docker repository to APT sources:
+    1. Add the Docker repository to APT sources:
     
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
             
-    3. Update the package database
+    1. Update the package database
     
     sudo apt-get update
 
-    4. Make sure you are about to install from the Docker repo
+    1. Make sure you are about to install from the Docker repo
 
     apt-cache policy docker-ce
 
-    5. Install Docker:
+    1. Install Docker:
 
     sudo apt-get install -y docker-ce
 
-    6. Check that it’s running:
+    1. Check that it’s running:
 
     sudo systemctl status docker
 

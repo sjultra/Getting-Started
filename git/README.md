@@ -13,13 +13,17 @@
 
    #### Make a commit to a test log file.  Record your name and date.
 
+#### Markdown 
+
+  https://guides.github.com/features/mastering-markdown/#intro
+
 #### Git commands for updating the local repo
 
     1. Open Terminal.
     
-    2.Change the current working directory to your local project.
+    1. Change the current working directory to your local project.
     
-    3. Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master.
+    1. Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master.
 
       $ git fetch upstream
        > remote: Counting objects: 75, done.
@@ -29,12 +33,12 @@
       > From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
       >  * [new branch]      master     -> upstream/master
 
-    4.Check out your fork's local master branch.
+    1. Check out your fork's local master branch.
 
       $ git checkout master
       > Switched to branch 'master'
 
-    5. Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
+    1. Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes.
 
       $ git merge upstream/master
       > Updating a422352..5fdff0f

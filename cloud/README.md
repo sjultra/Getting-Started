@@ -5,53 +5,53 @@
    #### Create a free tier [GCP](https://cloud.google.com/) account:
     Requires a card but prepaid mastercard/visa can’t be used
     
-    a. Create a ubuntu 16.04 vm
+    1. Create a ubuntu 16.04 vm
 
-    b. ssh into the vm created at step a. and run the following: ip a
+    1. ssh into the vm created at step a. and run the following: ip a
 
-    c. Paste the output here:
+    1. Paste the output here:
 
-    d. ssh into the vm create at step a. and run the following: ifconfig
+    1. ssh into the vm create at step a. and run the following: ifconfig
 
-    e. Paste the output here:
+    1. Paste the output here:
 
-    f. Share sample test output results from below.
+    1. Share sample test output results from below.
     
    #### Create a free tier [AWS](https://aws.amazon.com/free) account:
     Requires a card but prepaid mastercard/visa can be used
 
-    a. Create a ubuntu 16.04 vm
+    1. Create a ubuntu 16.04 vm
 
-    b. ssh into the vm create at step a. and run the following: ip a
+    1. ssh into the vm create at step a. and run the following: ip a
 
-    c. Paste the output here:
+    1. Paste the output here:
 
-    d. ssh into the vm create at step a. and run the following: ifconfig
+    1. ssh into the vm create at step a. and run the following: ifconfig
 
-    e. Paste the output here:
+    1. Paste the output here:
     
    #### Create a free [Azure](https://azure.microsoft.com/en-us/free/) account:
     Requires a card but prepaid mastercard/visa can’t be used
     
-    a. Create a ubuntu 16.04 vm
+    1. Create a ubuntu 16.04 vm
 
-    b. ssh into the vm create at step a. and run the following: ip a
+    1. ssh into the vm create at step a. and run the following: ip a
 
-    c. Paste the output here:
+    1. Paste the output here:
 
-    d. ssh into the vm create at step a. and run the following: ifconfig
+    1. ssh into the vm create at step a. and run the following: ifconfig
 
-    e. Paste the output here:
+    1. Paste the output here:
 
    #### Create a free tier [Oracle Cloud](https://www.oracle.com/cloud/free) account:
     Requires a card but prepaid mastercard/visa can’t be used
 
-    a. Create a ubuntu 16.04 vm
+    1. Create a ubuntu 16.04 vm
 
-    b. ssh into the vm create at step a. and run the following: ip a
+    1. ssh into the vm create at step a. and run the following: ip a
 
-    c. Paste the output here:
+    1. Paste the output here:
 
-    d. ssh into the vm create at step a. and run the following: ifconfig
+    1. ssh into the vm create at step a. and run the following: ifconfig
 
-    e. Paste the output here:
+    1. Paste the output here:
