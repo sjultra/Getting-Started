@@ -51,3 +51,11 @@ Follow these steps to get started with using cloud based servers. Most of these 
 16. #### [Reverse terraform code with terraformer for GCP](./docs/Reverse_Terraform_Code_With_Terraformer/)
 
 17. ####  [Straight-forward Docker engine install on Ubuntu, CentOS/RHEL and Debian](./docs/Docker_Install_Ubuntu_Centos_Debian/)
+
+18. #### [Office365](./docs/Office365/)
+
+19. #### [Asana](./docs/Office365/)
+
+20. #### [Twitter](./docs/Twitter/)
+
+21. #### [Zoom](./docs/Zoom/)
