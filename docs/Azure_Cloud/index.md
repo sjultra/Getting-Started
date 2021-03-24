@@ -15,7 +15,6 @@
 [go back](../Getting-Started)
 
 # Build a web app using Azure DevOps using nodejs
-
 1. Reproduce Sequence Diagram with PlantUML - https://www.azuredevops.tips/generateplantumlinpipeline-yaml/
 1. Architecture overview with diagrams.py - https://diagrams.mingrammer.com
 1. Test Plan - https://acloudguru.com/hands-on-labs/build-and-test-a-node-js-app-in-azure-devops
