@@ -1,0 +1,17 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+trigger:
+  branches:
+    include:
+    - master
+
+steps:
+- script: |
+    curl --request POST -u ${USER}:${PAT} "$(LINK)" --header 'Content-Type:application/json' --data-raw $(DATA-RAW)
+  env:
+    USER: $(USER)
+    PAT: $(PAT)
+    LINK: $(LINK)
+    DATA-RAW: $(DATA-RAW)
+  displayName: 'Call CustomerFactory'

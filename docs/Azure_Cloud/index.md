@@ -14,6 +14,13 @@
 
 [go back](../Getting-Started)
 
+	
+# Build a web app using Azure DevOps using nodejs
+1. Reproduce Sequence Diagram with PlantUML - https://www.azuredevops.tips/generateplantumlinpipeline-yaml/
+1. Architecture overview with diagrams.py - https://diagrams.mingrammer.com
+1. Test Plan - https://acloudguru.com/hands-on-labs/build-and-test-a-node-js-app-in-azure-devops
+1. Azure DevOps Pipeline - https://docs.microsoft.com/en-us/learn/modules/deploy-nodejs/
+
 #### Create a free [Azure](https://azure.microsoft.com/en-us/free/) account:
     Requires a card but prepaid mastercard/visa can’t be used
     
