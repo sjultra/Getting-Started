@@ -16,6 +16,10 @@
 
 ![alt text](/_images/StartingDiagram.png "UML")
 
+If you are seeing this page from GitHub and want to make changes join the Azure DevOps project here and submit a pull request. 
+
+[*** Azure DevOps "starting" Project ***](https://dev.azure.com/sjultra/starting)
+
 Follow these steps to get started with using cloud based services. Most of these are free services. By signing up for these services you can become familiar with the tools we are using.
 
 We hope you can learn something and find some rewarding projects to work on. These docs are a work in progress. Your contributions are welcome. Please submit pull requests and make suggestions.
@@ -23,6 +27,7 @@ We hope you can learn something and find some rewarding projects to work on. The
 Projects with * are in draft - we are looking for people to work with us on these. 
 
 1. [* Asana](./docs/Asana/)
+1. [* AstroClock](./AstroClock/)
 1. [AWS_Cloud](./docs/AWS_Cloud/)
 1. [Azure_Cloud](./docs/Azure_Cloud/)
 1. [Azure_DevOps](./docs/Azure_DevOps/)
