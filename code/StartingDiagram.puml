@@ -1,0 +1,45 @@
+@startuml
+
+' -----------------------------------------------------
+left to right direction
+
+rectangle "Cloud" {
+    rectangle "IAAS" as iaas{
+    rectangle "Aws" #lime
+    rectangle "Azure"#lime
+    rectangle "GCP" #lime
+    rectangle "Oracle"#red
+    rectangle "Splunk"#lime
+}
+
+    rectangle "SAAS" as saas{
+    rectangle "Asana"#lime
+    rectangle "Azure DevOps"#lime
+    rectangle "DUO"#lime
+    rectangle "Okta"#lime
+    rectangle "Service Now"#lime
+    rectangle "Office365"#lime
+    rectangle "Teams"#lime
+    rectangle "Zoom"#lime
+    rectangle "Miro"#lime
+    rectangle "HubSpot"#lime
+    rectangle "AstroClock"#lime
+    rectangle "LinkedIn"#lime
+    rectangle "Twitter"#lime
+}
+
+    rectangle "Manually deployed services" as mds{
+    rectangle "Hashicorp Vault"#lime
+    rectangle "Pihole "#lime
+    rectangle "Straight-forward Docker engine install on Ubuntu, CentOS/RHEL and Debian" #lime
+    rectangle "How to deploy Openshift 4 on a server"#lime
+    rectangle "Install and config pfSense for one-node infrastructure and access it from anywhere with DDNS on Cloudflare"#lime
+    rectangle "Reverse terraform code with terraformer for GCP"#lime
+    rectangle "Git"#lime
+}
+
+iaas -- saas
+saas -- mds
+mds -- iaas
+
+@enduml

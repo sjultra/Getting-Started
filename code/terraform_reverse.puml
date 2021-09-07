@@ -1,0 +1,10 @@
+@startuml
+Rectangle "Terraformer" {
+}
+cloud GCP_env {
+}
+artifact env_config.tf 
+Terraformer --> env_config.tf :generate_terraform_config_file
+Terraformer -> GCP_env :analyse_GCP_env
+GCP_env -> Terraformer :env_config_export
+@enduml

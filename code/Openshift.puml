@@ -1,0 +1,23 @@
+@startuml
+
+
+cloud "Internet" {
+}
+rectangle Server {
+node "MasterVM1"
+node "MasterVM2"
+node "MasterVM3"
+node "WorkerVM1"
+node "WorkerVM2"
+node "WorkerVM3"
+node "haproxyVM" {
+}
+}
+Internet -> haproxyVM
+haproxyVM -> MasterVM1
+haproxyVM -> MasterVM2
+haproxyVM -> MasterVM3
+haproxyVM -> WorkerVM1
+haproxyVM -> WorkerVM2
+haproxyVM -> WorkerVM3
+@enduml

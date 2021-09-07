@@ -1,0 +1,62 @@
+pool:
+  vmImage: 'ubuntu-latest'
+
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - code
+
+steps:
+- script: |
+    git rev-parse HEAD^2 >/dev/null 2>/dev/null && merge=1 || merge=0
+    
+    LinkToClone="${Link}"
+    #In the Path_input_output_json we will place the path to the folders were the input/output is.
+    Path_input_output_json="code:_images"
+
+
+    data='{"stagesToSkip":[],"resources":{"repositories":{"self":{"refName":"refs/heads/main"}}},"templateParameters":{"CLONE_LINK":"'"$LinkToClone"'","JSON":"'"$Path_input_output_json"'","MERGE":"'"$merge"'"},"variable":{}}'
+
+    if [ "$merge" == "1" ];then
+      see_last_commited_files="git diff-tree --no-commit-id --name-only -r HEAD^2"
+    else
+      see_last_commited_files="git diff-tree --no-commit-id --name-only -r HEAD"
+    fi
+
+    commited_files=$($see_last_commited_files)
+
+    if [[ "$commited_files" == *".md"* || "$commited_files" == *".docx"* ]] ;then
+      echo "\nRunning Converter\n"
+      curl -u ${USER}:${PAT} -X POST "https://dev.azure.com/sjultra/CMS/_apis/pipelines/118/runs?&api-version=6.0-preview.1" -H 'Content-Type: application/json' --data-raw "$data"
+    fi
+
+    if [[ "$commited_files" == *".puml"* ]] ;then
+      echo
+      echo "\nRunning UMLPlant\n"
+      curl -u ${USER}:${PAT} -X POST "https://dev.azure.com/sjultra/CMS/_apis/pipelines/119/runs?&api-version=6.0-preview.1" -H 'Content-Type: application/json' --data-raw "$data"
+    fi
+
+    if [[ "$commited_files" == *".py"* ]] ;then
+      echo
+      echo "\nRunning GraphViz\n"
+      curl -u ${USER}:${PAT} -X POST "https://dev.azure.com/sjultra/CMS/_apis/pipelines/126/runs?&api-version=6.0-preview.1" -H 'Content-Type: application/json' --data-raw "$data"
+    fi
+
+
+    echo
+    $see_last_commited_files
+  env:
+    USER: $(USER)
+    PAT: $(PAT)
+    Link: $(Link)
+  displayName: 'Run Pipeline'

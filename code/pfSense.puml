@@ -1,0 +1,29 @@
+@startuml
+cloud "Internet" {
+}
+rectangle Server {
+node "vm0"
+node "vm1"
+node "vm2"
+node "pfSense" {
+}
+}
+rectangle Server1 {
+node "vm3"
+node "vm4"
+node "vm5"
+}
+rectangle Server2 {
+node "vm6"
+node "vm7"
+}
+Internet -> pfSense
+pfSense -> vm0
+pfSense -> vm1
+pfSense -> vm2
+pfSense -> vm3
+pfSense -> vm4
+pfSense -> vm5
+pfSense -> vm6
+pfSense -> vm7
+@enduml

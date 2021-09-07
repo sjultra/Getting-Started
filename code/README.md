@@ -1,0 +1,1 @@
+Here is the place where we should place the code for the drawings or for the documents in order for the CMS to build them.

@@ -30,6 +30,7 @@ Projects with * are in draft - we are looking for people to work with us on thes
 1. [GCP_Cloud](../GCP_Cloud/)
 1. [Git](../Git/)
 1. [Hashicorp Vault](../Hashicorp/)
+1. [* HubSpot](../HubSpot/)
 1. [* LinkedIn](../LinkedIn/)
 1. [Markdown](../Markdown/)
 1. [* Miro](../Miro/)
