@@ -14,7 +14,7 @@
 
 ## New Hire Getting Started list
 
-![alt text](/_images/StartingDiagram.png "UML")
+![alt text](/_images/StartingDiagram/StartingDiagram.png "UML")
 
 Follow these steps to get started with using cloud based services. Most of these are free services. By signing up for these services you can become familiar with the tools we are using.
 
