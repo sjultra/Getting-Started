@@ -14,7 +14,7 @@
 
 # New Hire Getting Started list 2021
 
-![alt text](/_images/StartingDiagram.png 'UML')
+![alt text](/_images/StartingDiagram/StartingDiagram.png 'UML')
 
 If you are seeing this page from GitHub and want to make changes join the Azure DevOps project here and submit a pull request.
 
