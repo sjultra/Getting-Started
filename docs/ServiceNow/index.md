@@ -1,4 +1,4 @@
-   <!-- Copyright 2020 SJULTRA, inc.
+   <!-- Copyright 2022 SJULTRA, inc.
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -14,9 +14,13 @@
    
 [go back](../Getting-Started)
 
-#### Create a free SNOW Service Now Demo account and developer instance - link the two of them.
+## Create a free ServiceNow Demo account and developer instance - link the two of them.
 
-    https://www.servicenow.com/lpdem/demonow.html
-    https://developer.servicenow.com/
+- https://www.servicenow.com/lpdem/demonow.html
+- https://developer.servicenow.com/
+    
+##    Create a demo App on the ServiceNow Platform
+    
+- https://developer.servicenow.com/dev.do#!/learn/learning-plans/rome/citizen_developer
 
 ServiceNow is an American software company based in Santa Clara, California that develops a cloud computing platform to help companies manage digital workflows for enterprise operations, and was also recognized for innovation.
