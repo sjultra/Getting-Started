@@ -1,0 +1,4 @@
+@startuml asana_hello_world
+"Local Machine"->"Asana API Endpoint"
+"Asana API Endpoint"->"Local Machine"
+@enduml
