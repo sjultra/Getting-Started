@@ -16,13 +16,9 @@
 
 # Build a demo hello world app in Node.js for Miro
 
-<https://miro.com/online-strategic-planning-tool/>
+Miro is a visual, online, collaborative white-board platform. And they have a REST API that allows us to both create boards (what they call the objects you use for visual collaboration), amongst other activities. For the purposes of this tutorial, we will be using the REST API but not spending any real time on the platform itself. Below is a simple diagram showing how we will be interacting with the Miro REST API for our "hello world" javascript applications. Let's get started!
 
-1. Include a Sequence Diagram with PlantUML - <https://www.azuredevops.tips/generateplantumlinpipeline-yaml/>
-1. Architecture overview with diagrams.py - <https://diagrams.mingrammer.com>
-1. Leverage Azure DevOps Pipeline - <https://docs.microsoft.com/en-us/learn/modules/deploy-nodejs/>
-1. Utilize a Test Plan - <https://acloudguru.com/hands-on-labs/build-and-test-a-node-js-app-in-azure-devops>
-1. Create a hello world demo app <https://developers.miro.com/docs/getting-started>
+![Miro API Diagram](miro_hello_world.png "Miro Hello World Diagram")
 
 ## Step 1: Sign up for a Free Miro Account
 
@@ -72,7 +68,7 @@ Authorization: 'Bearer eyJtaXJvLm9...'
 To:
 
 ```javascript
-Authorization: 'Bearer your_token'
+Authorization: 'Bearer insert_your_token'
 ```
 
 #### Creating a board
@@ -121,9 +117,6 @@ node miro_create_board.js
 It will output something similar to the folowing:
 
 ```json
-❯ node miro_create_board.js
-(node:30481) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time
-(Use `node --trace-warnings ...` to show where the warning was created)
 {
   id: 'uXjVOgqtYA8=',
   type: 'board',
@@ -203,9 +196,6 @@ node miro_get_boards.js
 It will output something similar to the folowing:
 
 ```json
-❯ node miro_get_boards.js
-(node:30501) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time
-(Use `node --trace-warnings ...` to show where the warning was created)
 {
   size: 3,
   offset: 0,

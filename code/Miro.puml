@@ -1,0 +1,3 @@
+@startuml miro_hello_world
+You <-> "Miro API End Point": "Hello World"
+@enduml
