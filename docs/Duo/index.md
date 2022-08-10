@@ -16,6 +16,10 @@
 
 Duo is a very popular 2fa application used by many companies to protect enterprise resources and applications. Below, we will be testing the Duo API with a very simple example. Duo makes this super easy, and the documentation is pretty good. We will be uing Javascript (specifically Node.js) to test an API end-point, but there is documentation and samples for a variety of languages.
 
+Here is a simple diagram showing how we will interact with the Duo API:
+
+![Duo API Diagram](duo_hello_world.png)
+
 ## Step 1: Get your Duo developer account
 
 Sign up for a free Duo Trial Account [here](https://signup.duo.com/). You will need to use an email you can reach (to validate your account), and have your smartphone to install the Duo app.
