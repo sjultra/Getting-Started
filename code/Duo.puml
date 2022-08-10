@@ -1,0 +1,3 @@
+@startuml duo_hello_world
+You <-> "Duo Admin API End Point": "Hello World"
+@enduml
