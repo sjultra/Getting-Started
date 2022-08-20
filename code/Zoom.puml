@@ -1,0 +1,4 @@
+@startuml zoom_hello_world
+"Local Machine"->"Zoom API Endpoint"
+"Zoom API Endpoint"->"Local Machine"
+@enduml
