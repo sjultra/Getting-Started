@@ -111,6 +111,8 @@ webpack 5.28.0 compiled successfully in 291 ms
 
 Point your browser to <http://0.0.0.0:9999/>
 
+You will see the Zoom SDK test application, showing what name will be used when this client connects to your Zoom call (that you will schedule in the next step), inputs for meeting number, password, email, and role (attendee/host).
+
 ![Zoom WebSDK](zoom_websdk_screenshot1.png)
 
 ## Step 7: Join a scheduled meeting using the sample app
