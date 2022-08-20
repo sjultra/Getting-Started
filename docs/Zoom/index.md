@@ -16,6 +16,10 @@
 
 # Build a web app using Zoom api calls using nodejs
 
+We will be using the Zoom SDK and API in this tutorial to build a simple "hello world" app. This tutorial will see us scheduling a zoom call, connecting using the desktop app (or web app), and also connecting a 2nd party using the Zoom API. It's easy to do, and straight forward, as well as instructive about how simple Zoom is to work with. Below, we have included a simple diagram of how we will be connecting to the API.
+
+![Zoom Hello World](zoom_hello_world.png)
+
 ## Step 1: Get your house in order (pre-requisites)
 
 You will need Node.js for this, which is easy to get for your platform. Navigate your browser to Node's [site](https://nodejs.org/en/) and download for your system. Otherwise, that's it!
@@ -121,4 +125,4 @@ If everything worked you should see your self twice, one will be the name in the
 
 ## Further Reading
 
-
+From the Zoom developer docs, there are other tools you can build (e.g., chatbots, zoom marketplace apps, video based apps, etc.), you can see that [here](https://marketplace.zoom.us/docs/guides/). So, have some fun and build something extra special using the API and SDK that Zoom has to offer.
