@@ -16,22 +16,17 @@
 
 # Build a web app using Zoom api calls using nodejs
 
-1. Reproduce Sequence Diagram with PlantUML - <https://www.azuredevops.tips/generateplantumlinpipeline-yaml/>
-1. Architecture overview with diagrams.py - <https://diagrams.mingrammer.com>
-1. Test Plan - <https://acloudguru.com/hands-on-labs/build-and-test-a-node-js-app-in-azure-devops>
-1. Azure DevOps Pipeline - <https://docs.microsoft.com/en-us/learn/modules/deploy-nodejs/>
-1. Using the Zoom API Documentation - <https://marketplace.zoom.us/docs/sdk/native-sdks/web/reference>
-1. Using the Zoom API Sample App - <https://github.com/zoom/sample-app-node>
-
 ## Step 1: Get your house in order (pre-requisites)
 
-## Step 2: Sign-up for developer account
+You will need Node.js for this, which is easy to get for your platform. Navigate your browser to Node's [site](https://nodejs.org/en/) and download for your system. Otherwise, that's it!
 
-<https://developers.zoom.us/>
+## Step 2: Sign-up for a developer account
+
+We will need a Zoom developer account, you can sign up for a free one [here](https://developers.zoom.us/). Once you have it, sign in and make sure you are able to access the your developer account.
 
 ## Step 3: Download meetingsdk-web-sample
 
-<https://github.com/zoom/meetingsdk-web-sample>
+We will need a sample app from Zoom for Node.js in order to connect to the Zoom API. You can download this sample from Zoom's GitHub site [here](https://github.com/zoom/meetingsdk-web-sample). You can download the zip file and unpack it, or clone the repository, either way is fine for this tutorial.
 
 ## Step 4: Create your test app
 
@@ -49,16 +44,24 @@ You will find your SDK key, and secret key from the Zoom developer dashboard:
 
 We need to change two lines in the index.js file from the meetingsdk-web-sample repository.
 
-Add your keys below:
+Add your keys to `meetingsdk-web-sample/local/index.js` from [Step 4](#step-4-create-your-test-app):
 
 ```javascript
 const SDK_KEY = "YOUR_SDK_KEY";
 const SDK_SECRET = "YOUR_SDK_SECRET";
 ```
 
+In the `meetingsdk-web-sample` repository there are three sub directories:
+
+1. /local
+2. /CDN
+3. /component
+
+For purposes of this tutorial, we will be using local. But, /local and /CDN are essentially the same, and /component uses a different port. Essentially, /local is to be used with the desktop application and web application, whereas /component is for embedding Zoom into an iframe or another page element.
+
 ## Step 6: Run your program
 
-1. Navigate to where you downloaded the meetingsdk-web-sample repository
+1. Navigate to where you downloaded the meetingsdk-web-sample repository (e.g.,`meetingsdk-web-sample/local`)
 2. Run `npm install` to make sure you have all the right packages
 3. Run `npm start` to run the program and open up the port (localhost:9999)
 
@@ -117,3 +120,5 @@ From the Zoom WebSDK (<http://0.0.0.0:9999/>), input your meeting number and a p
 If everything worked you should see your self twice, one will be the name in the field to the far left in the Zoom WebSDK (e.g., Local2.6.0Mac#chrome/...) and the host session.
 
 ## Further Reading
+
+
